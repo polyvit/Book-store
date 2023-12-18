@@ -1,0 +1,9 @@
+$shelf-bg-color: #f2ebe3;
+
+.container {
+  background-color: $shelf-bg-color;
+  width: 90vw;
+  margin: 5vh auto 0;
+  height: 90vh;
+  border-radius: 30px;
+}

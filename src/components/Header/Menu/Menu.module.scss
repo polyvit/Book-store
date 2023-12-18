@@ -1,0 +1,13 @@
+.menu {
+  display: flex;
+  align-items: center;
+}
+.link {
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.active {
+  background-color: #d8a862;
+}
