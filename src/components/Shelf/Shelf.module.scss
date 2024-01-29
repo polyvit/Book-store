@@ -1,0 +1,45 @@
+@import url("../../assets/styles/_variables.scss");
+
+$main-bg-color: #e1c7a2;
+$shelf-bg-color: #f2ebe3;
+$shelf-color: #eee5d9;
+
+.wrapper {
+  position: relative;
+  width: 105%;
+  left: -2.5%;
+  margin-bottom: 50px;
+}
+.shelf {
+  background-color: $shelf-color;
+  background: -webkit-linear-gradient(0deg, #e6ddce, #e6ddce);
+  background: -moz-linear-gradient(0deg, #e6ddce, #e6ddce);
+  background: linear-gradient(0deg, #e6ddce, #e6ddce);
+  height: 40px;
+  clip-path: polygon(2.5% 0%, 97.7% 0%, 100% 100%, 0 100%);
+}
+.front_part {
+  position: absolute;
+  background-color: $shelf-bg-color;
+  height: 10px;
+  width: 100%;
+  &::after {
+    content: "";
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    display: block;
+    background: -webkit-linear-gradient(
+      0deg,
+      rgb(242, 235, 227),
+      rgb(184, 171, 153)
+    );
+    background: -moz-linear-gradient(
+      0deg,
+      rgb(242, 235, 227),
+      rgb(184, 171, 153)
+    );
+    background: linear-gradient(0deg, rgb(242, 235, 227), rgb(184, 171, 153));
+    clip-path: polygon(2.3% 0%, 97.7% 0%, 96% 100%, 4% 100%);
+  }
+}

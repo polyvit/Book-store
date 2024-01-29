@@ -1,3 +1,5 @@
+@import url("./assets/styles/_variables.scss");
+
 $shelf-bg-color: #f2ebe3;
 
 .container {
@@ -6,4 +8,26 @@ $shelf-bg-color: #f2ebe3;
   margin: 5vh auto 0;
   height: 90vh;
   border-radius: 30px;
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+.main {
+  display: flex;
+  padding: 0px 80px;
+  height: 45%;
+  & > div:first-child {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: left;
+  }
+  & > div:last-child {
+    flex-grow: 1;
+  }
 }

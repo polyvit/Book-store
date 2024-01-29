@@ -1,0 +1,50 @@
+// .element {
+//   display: flex;
+//   align-items: center;
+//   height: 100%;
+//   position: relative;
+// }
+// .element:first-child {
+//   width: 30px;
+// }
+// .element > div:first-child {
+//   width: 30px;
+// }
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background-color: white;
+  width: 140px;
+  height: 250px;
+  border-radius: 20px;
+  line-height: 100%;
+  position: relative;
+  padding: 20px;
+}
+.section {
+  width: 100%;
+  height: max-content;
+  position: absolute;
+  top: 150px;
+  left: -25px;
+  transform: rotate(270deg);
+  transform-origin: top left;
+  text-align: right;
+}
+.title {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+  text-align: center;
+}
+.info {
+  font-size: 10px;
+  color: rgb(153, 153, 153);
+}
+.bottom {
+  height: 60%;
+}
