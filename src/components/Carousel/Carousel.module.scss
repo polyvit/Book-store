@@ -21,6 +21,11 @@
   justify-content: space-between;
   position: relative;
 }
+.belt {
+  display: flex;
+  gap: 35px;
+  overflow-x: hidden;
+}
 .item {
   display: flex;
   gap: 30px;

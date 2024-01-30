@@ -2,7 +2,13 @@ import React from "react";
 import styles from "./Carousel.module.scss";
 import BOOK from "../../assets/images/07.jpg";
 
-const CarouselItem = () => {
+interface CarouselItemProps {
+  title: string;
+  author: string;
+  image?: string;
+}
+
+const CarouselItem: React.FC<CarouselItemProps> = ({ title, author }) => {
   return (
     <div className={styles.item}>
       <div className={styles.book}>
@@ -11,8 +17,8 @@ const CarouselItem = () => {
       </div>
       <div className={styles.info}>
         <div>
-          <p className={styles.title}>False Witness: A Novel</p>
-          <span className={styles.author}>Karin Slaughter</span>
+          <p className={styles.title}>{title}</p>
+          <span className={styles.author}>{author}</span>
         </div>
         <button className="btn">Buy now</button>
       </div>

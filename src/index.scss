@@ -3,6 +3,7 @@
 
 $main-bg-color: #e1c7a2;
 $basic-color: #2c1810;
+$white-color: white;
 
 * {
   margin: 0;
@@ -45,4 +46,9 @@ body {
   padding: 10px;
   color: $main-bg-color;
   font-weight: 300;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: $main-bg-color;
+  color: $white-color;
 }
